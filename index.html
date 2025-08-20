@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Quarterly Earnings Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/monokai.min.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <h2>Quarterly Earnings Report</h2>
+                <p>Q3 2025 Financial Review</p>
+                <hr>
+                <p><small>Technical Consultant</small></p>
+                <p><small>Contact: 23ds3000150@ds.study.iitm.ac.in</small></p>
+            </section>
+
+            <section data-markdown>
+                <textarea data-template>
+                    ## Agenda
+                    * Financial Highlights for Q3
+                    * Deep Dive: Performance Analysis
+                    * New Strategic Initiatives
+                    * Outlook for Q4
+                    * Open Q&A Session
+                </textarea>
+            </section>
+
+            <section>
+                <h2>Key Achievements This Quarter</h2>
+                <ul>
+                    <li class="fragment fade-in-then-semi-out">✅ Exceeded revenue target by 15%</li>
+                    <li class="fragment fade-in-then-semi-out">🚀 Launched new automated investment platform</li>
+                    <li class="fragment fade-in-then-semi-out">📈 Increased active user base by 200,000</li>
+                    <li class="fragment fade-in-then-semi-out">🏆 Maintained a 98% customer satisfaction rate</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Python for Financial Analysis</h2>
+                <p>A simple function to calculate portfolio returns:</p>
+                <pre><code class="python" data-line-numbers="1-5">
+import numpy as np
+
+def calculate_returns(prices):
+  # Calculates the simple daily returns
+  return (prices / prices.shift(1)) - 1
+                </code></pre>
+            </section>
+
+            <section>
+                <h2>Valuation Model: Black-Scholes</h2>
+                <p>We use the Black-Scholes formula to price options:</p>
+                $$ C(S, t) = N(d_1)S - N(d_2)Ke^{-r(T-t)} $$
+                <p><small>This helps us assess the value of derivatives in our portfolio.</small></p>
+
+                <aside class="notes">
+                    Remember to mention that 'C' is the call option price, 'S' is the current stock price, and 'K' is the strike price. This model is foundational for our risk management strategy.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Thank You</h2>
+                <p>Questions?</p>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/math/math.min.js"></script>
+
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+        });
+    </script>
+</body>
+</html>
