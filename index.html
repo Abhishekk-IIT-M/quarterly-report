@@ -60,7 +60,7 @@ def calculate_returns(prices):
             <section>
                 <h2>Valuation Model: Black-Scholes</h2>
                 <p>We use the Black-Scholes formula to price options:</p>
-                $$ C(S, t) = N(d_1)S - N(d_2)Ke^{-r(T-t)} $$
+                $$C(S, t) = N(d_1)S - N(d_2)Ke^{-r(T-t)}$$
                 <p><small>This helps us assess the value of derivatives in our portfolio.</small></p>
 
                 <aside class="notes">
@@ -86,7 +86,12 @@ def calculate_returns(prices):
     <script>
         Reveal.initialize({
             hash: true,
+            // **THIS INITIALIZES THE PLUGIN**
             plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+        });
+    </script>
+</body>
+</html>
         });
     </script>
 </body>
